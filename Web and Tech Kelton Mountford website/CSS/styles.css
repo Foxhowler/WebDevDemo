@@ -1,0 +1,221 @@
+/* Global Style 0000000000000000000*/
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf6ff;
+    color: #1e3a5f;
+}
+
+/* Header 00000000000000000000000000000*/
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h3 {
+    margin: 5px 0 15px 0;
+    font-weight: normal;
+}
+
+/* Navigation 00000000000000000000000*/
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #f4b400;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e63946;
+    color: white;
+}
+
+/* Sections 000000000000000000*/
+
+section {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 3px solid #f4b400;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Images 000000000000000000000000000000*/
+
+img {
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Lists 0000000000000000000000000000*/
+
+ul {
+    list-style-type: square;
+    line-height: 1.8;
+}
+
+/* Buttons 00000000000000000000*/
+
+.button {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}nav a:hover {
+    background-color: #e63946;
+    color: white;
+    box-shadow: 0 0 10px rgba(230, 57, 70, 0.6);
+}
+
+
+.button:hover {
+    background-color: #1e3a5f;
+}
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button,
+.button-container .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.button-container button:hover,
+.button-container .button-link:hover {
+    transform: scale(1.05);
+}
+/* Footer 0000000000000000000000000000000000000000*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e3a5f;
+    color: white;
+    margin-top: 40px;
+
+}
+
+/* Entrance Animations 000000000000000000000000000*/
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to sections */
+section {
+    animation: fadeSlideUp 0.8s ease forwards;
+}
+
+/* Add slight delay */
+section:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+section:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+
+section:nth-of-type(4) {
+    animation-delay: 0.6s;
+}
+
+/* Skill Hover Effect 0000000000000000*/
+
+#skillsList li {
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#skillsList li:hover {
+    background-color: #f4b400;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(244, 180, 0, 0.7);
+    transform: translateY(-3px);
+}
+/* Experience Table Styling 0000000000000000000000000000000000*/
+
+#experienceTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#experienceTable th {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+#experienceTable td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row coloring */
+#experienceTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover highlight effect */
+#experienceTable tbody tr:hover {
+    background-color: #f4b400;
+    color: white;
+    transition: 0.3s ease;
+}
+section h2 {
+    font-size: 1.8em;
+    position: relative;
+}
+
+section h2::after {
+    content: " 🎡";
+    font-size: 0.8em;
+}
